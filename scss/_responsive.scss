@@ -1,0 +1,105 @@
+@media only screen and (min-width: 768px) {
+    .sobremi .carousel .carousel-inner .carousel-item {
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero div {
+        width: 480px;
+    }
+    .mainServicios .servicios2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "servicio4 servicio5"
+        "servicio6 servicio1"
+        "servicio2 servicio3";
+    }
+    .aboutMe {
+        width: 70%;
+        text-align: center;
+    }
+    .sobremi .carousel {
+        height: 380px;
+    }
+    .sobremi .carousel-inner {
+        margin-top: 20px;
+    }
+    .sobremi .carousel-caption {
+        height: 100%;
+    }
+    .contacto2 {
+        height: 100%;
+        flex-direction: column;
+    }
+    .contacto2 .contenedorInfo {
+        width: 80%;
+    }
+    .contacto2 form {
+        width: 80%;
+    }
+    .contacto2 form .inputFlex {
+        display: block;
+    }
+    .contacto2 form .contenedorInput input {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .hero div {
+        width: 350px;
+    }
+    .mainServicios .servicios2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "servicio4"
+        "servicio5"
+        "servicio6"
+        "servicio1"
+        "servicio2"
+        "servicio3";
+    }
+    .aboutMe {
+        width: 70%;
+        text-align: center;
+    }
+    .portafolio {
+        height: 100%;
+    }
+    .portafolio .grillaPortafolio {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, auto);
+        grid-row-gap: 30px;
+        grid-template-areas:
+            "auno"
+            "vuno"
+            "ados"
+            "vdos"
+            "atres"
+            "vtres"
+            "acuatro"
+            "vcuatro"
+            "acinco";
+    }
+    .sobremi .skills {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 100px);
+        grid-template-areas:
+            "contenido"
+            "facebook"
+            "google"
+            "html"
+            "css"
+            "js";
+    }
+}

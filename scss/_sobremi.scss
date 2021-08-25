@@ -1,0 +1,83 @@
+@import 'variables';
+
+/*------ SOBRE MI ------*/
+
+.sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding-top: 10vh;
+    .tarjetaClientes {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            padding: 20px;
+            text-align: center;
+        }
+    }
+    .skills {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas: "contenido html" "facebook css" "google js";
+        .barra {
+            width: 90%;
+            justify-self: center;
+            align-self: center;
+            .progress-bar {
+                background-color: $colorTexto;
+                color: $colorDamasco;
+                position: relative;
+                left: -500px;
+                transform: translateX(500px);
+                transition: 3s;
+            }
+        }
+        .contenido {
+            grid-area: contenido;
+        }
+        .html {
+            grid-area: html;
+        }
+        .facebook {
+            grid-area: facebook;
+        }
+        .css {
+            grid-area: css;
+        }
+        .google {
+            grid-area: google;
+        }
+        .js {
+            grid-area: js;
+        }
+    }
+    .carousel {
+        width: 100%;
+        width: 70%;
+        margin-bottom: 10vh;
+        .carousel-inner {
+            .carousel-item {
+                height: 320px;
+                h5 {
+                    color: #000;
+                    font-weight: bolder;
+                    margin: 10px 0 20px 0;
+                }
+                p {
+                    color: $colorTexto;
+                }
+            }
+        }
+    }
+    img {
+        width: 150px;
+        border-radius: 150px;
+    }
+}

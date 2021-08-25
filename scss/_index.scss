@@ -1,0 +1,62 @@
+@import 'variables';
+
+/*------ INDEX ------*/
+
+.hero {
+    background-image: url("../img/hero.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    div {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        margin-top: 50px;
+        .tituloPrincipal{
+            color: white;
+            text-transform:initial;
+            font-size: 30px;
+            span {
+                text-transform: uppercase;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+        button {
+            width: 180px;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: $colorDamasco;
+            color: black;
+            font-size: 18px;
+            border: 1px solid $colorDamasco;
+        }
+        button:hover {
+            background-color: $backgroundColor;
+            color: black;
+            cursor: pointer;
+            border: 1px solid $colorDamasco;
+        }
+    }
+}
+
+.hero::before {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

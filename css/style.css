@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+h1 {
+  text-transform: uppercase;
+  padding-bottom: 10px; }
+
+hr {
+  width: 4%;
+  border: solid 2px #404040;
+  margin-bottom: 30px; }
+
+/*header*/
+header {
+  background-color: #FFEFD4;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  header .menuPrincipal {
+    width: 100%; }
+    header .menuPrincipal a {
+      color: #000; }
+      header .menuPrincipal a p {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        padding-left: 30px;
+        width: 200px;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0; }
+    header .menuPrincipal a:hover {
+      text-decoration: none;
+      color: #404040; }
+  header .menuPrincipal ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: center; }
+    header .menuPrincipal ul li a {
+      color: #404040;
+      text-decoration: none;
+      margin: 0 20px; }
+    header .menuPrincipal ul li a:hover {
+      border-bottom: 2px solid #404040;
+      padding-bottom: 5px; }
+  header div {
+    padding-right: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-end; }
+    header div i {
+      font-size: 25px;
+      margin-left: 10px; }
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEFD4;
+  height: 10vh; }
+
+/*------ INDEX ------*/
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .hero div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    margin-top: 50px; }
+    .hero div .tituloPrincipal {
+      color: white;
+      text-transform: initial;
+      font-size: 30px; }
+      .hero div .tituloPrincipal span {
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif; }
+    .hero div button {
+      width: 180px;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      background-color: #FFEFD4;
+      color: black;
+      font-size: 18px;
+      border: 1px solid #FFEFD4; }
+    .hero div button:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      border: 1px solid #FFEFD4; }
+
+.hero::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/*------ SERVICIOS ------*/
+.mainServicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .mainServicios .servicios {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 10vh 0 5vh;
+    text-align: center; }
+  .mainServicios .servicios2 {
+    height: 70vh;
+    padding-bottom: 10vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "servicio4 servicio5 servicio6"
+ "servicio1 servicio2 servicio3";
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    /*for*/ }
+    .mainServicios .servicios2 .servicio1 {
+      grid-area: servicio1; }
+    .mainServicios .servicios2 .servicio2 {
+      grid-area: servicio2; }
+    .mainServicios .servicios2 .servicio3 {
+      grid-area: servicio3; }
+    .mainServicios .servicios2 .servicio4 {
+      grid-area: servicio4; }
+    .mainServicios .servicios2 .servicio5 {
+      grid-area: servicio5; }
+    .mainServicios .servicios2 div {
+      text-align: center;
+      background-color: white;
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+      padding: 30px; }
+      .mainServicios .servicios2 div i {
+        font-size: 50px;
+        margin-bottom: 20px; }
+      .mainServicios .servicios2 div h4 {
+        margin-bottom: 10px;
+        font-size: 20px; }
+      .mainServicios .servicios2 div p {
+        text-align: center; }
+    .mainServicios .servicios2 div:hover {
+      color: #FFEFD4;
+      background-color: dimgray;
+      transition: 0.5s;
+      cursor: pointer; }
+  .mainServicios .aboutMe {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; }
+
+/*------ PORTAFOLIO------*/
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 10vh 0; }
+  .portafolio .grillaPortafolio {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 30px;
+    grid-template-areas: "auno vuno ados"
+ "auno vuno ados"
+ "vdos vuno vtres"
+ "vdos atres vtres"
+ "vdos atres vtres"
+ "acuatro vcuatro acinco"
+ "acuatro vcuatro acinco"
+ ". vcuatro .";
+    /*map*/
+    /*each*/ }
+    .portafolio .grillaPortafolio div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      .portafolio .grillaPortafolio div img {
+        width: 100%; }
+      .portafolio .grillaPortafolio div img:hover {
+        transform: scale(1.2);
+        transition: 1s; }
+    .portafolio .grillaPortafolio .auno {
+      grid-area: auno; }
+    .portafolio .grillaPortafolio .ados {
+      grid-area: ados; }
+    .portafolio .grillaPortafolio .atres {
+      grid-area: atres; }
+    .portafolio .grillaPortafolio .acuatro {
+      grid-area: acuatro; }
+    .portafolio .grillaPortafolio .acinco {
+      grid-area: acinco; }
+    .portafolio .grillaPortafolio .vuno {
+      grid-area: vuno; }
+    .portafolio .grillaPortafolio .vdos {
+      grid-area: vdos; }
+    .portafolio .grillaPortafolio .vtres {
+      grid-area: vtres; }
+    .portafolio .grillaPortafolio .vcuatro {
+      grid-area: vcuatro; }
+
+/*------ SOBRE MI ------*/
+.sobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding-top: 10vh; }
+  .sobremi .tarjetaClientes {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .sobremi .tarjetaClientes p {
+      padding: 20px;
+      text-align: center; }
+  .sobremi .skills {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: "contenido html" "facebook css" "google js"; }
+    .sobremi .skills .barra {
+      width: 90%;
+      justify-self: center;
+      align-self: center; }
+      .sobremi .skills .barra .progress-bar {
+        background-color: #404040;
+        color: #FFEFD4;
+        position: relative;
+        left: -500px;
+        transform: translateX(500px);
+        transition: 3s; }
+    .sobremi .skills .contenido {
+      grid-area: contenido; }
+    .sobremi .skills .html {
+      grid-area: html; }
+    .sobremi .skills .facebook {
+      grid-area: facebook; }
+    .sobremi .skills .css {
+      grid-area: css; }
+    .sobremi .skills .google {
+      grid-area: google; }
+    .sobremi .skills .js {
+      grid-area: js; }
+  .sobremi .carousel {
+    width: 100%;
+    width: 70%;
+    margin-bottom: 10vh; }
+    .sobremi .carousel .carousel-inner .carousel-item {
+      height: 320px; }
+      .sobremi .carousel .carousel-inner .carousel-item h5 {
+        color: #000;
+        font-weight: bolder;
+        margin: 10px 0 20px 0; }
+      .sobremi .carousel .carousel-inner .carousel-item p {
+        color: #404040; }
+  .sobremi img {
+    width: 150px;
+    border-radius: 150px; }
+
+/*------ CONTACTO ------*/
+.contacto,
+.contacto2 {
+  display: flex;
+  align-items: center; }
+
+.contacto {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 10vh; }
+  .contacto p {
+    width: 80%;
+    padding-bottom: 30px;
+    text-align: center; }
+  .contacto div {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.contacto2 {
+  height: 40vh;
+  justify-content: center;
+  padding: 5vh 0;
+  width: 100%; }
+  .contacto2 .contenedorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    margin-left: 20px; }
+    .contacto2 .contenedorInfo .info {
+      display: flex;
+      margin: 10px 0; }
+      .contacto2 .contenedorInfo .info i {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+        background-color: #FFEFD4;
+        border-radius: 20px;
+        padding: 10px; }
+  .contacto2 form {
+    width: 50%; }
+    .contacto2 form .inputFlex {
+      display: flex;
+      justify-content: space-between; }
+    .contacto2 form .contenedorInput {
+      margin: 0; }
+      .contacto2 form .contenedorInput input,
+      .contacto2 form .contenedorInput #input,
+      .contacto2 form .contenedorInput .input2 {
+        height: 30px;
+        padding: 5px;
+        border: solid 1px #404040;
+        margin-bottom: 20px; }
+      .contacto2 form .contenedorInput input {
+        width: 45%; }
+      .contacto2 form .contenedorInput #input {
+        width: 100%; }
+      .contacto2 form .contenedorInput .input2 {
+        width: 100%;
+        height: 120px; }
+    .contacto2 form .contenedorBoton {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 0; }
+      .contacto2 form .contenedorBoton button {
+        width: 200px;
+        padding: 10px;
+        border: none;
+        background-color: #404040;
+        color: white;
+        font-size: 18px;
+        border: 1px solid black; }
+      .contacto2 form .contenedorBoton button:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border: 1px solid black; }
+
+@media only screen and (min-width: 768px) {
+  .sobremi .carousel .carousel-inner .carousel-item {
+    height: 380px; } }
+
+@media only screen and (max-width: 767px) {
+  .hero div {
+    width: 480px; }
+  .mainServicios .servicios2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "servicio4 servicio5"
+ "servicio6 servicio1"
+ "servicio2 servicio3"; }
+  .aboutMe {
+    width: 70%;
+    text-align: center; }
+  .sobremi .carousel {
+    height: 380px; }
+  .sobremi .carousel-inner {
+    margin-top: 20px; }
+  .sobremi .carousel-caption {
+    height: 100%; }
+  .contacto2 {
+    height: 100%;
+    flex-direction: column; }
+  .contacto2 .contenedorInfo {
+    width: 80%; }
+  .contacto2 form {
+    width: 80%; }
+  .contacto2 form .inputFlex {
+    display: block; }
+  .contacto2 form .contenedorInput input {
+    width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .hero div {
+    width: 350px; }
+  .mainServicios .servicios2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "servicio4"
+ "servicio5"
+ "servicio6"
+ "servicio1"
+ "servicio2"
+ "servicio3"; }
+  .aboutMe {
+    width: 70%;
+    text-align: center; }
+  .portafolio {
+    height: 100%; }
+  .portafolio .grillaPortafolio {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, auto);
+    grid-row-gap: 30px;
+    grid-template-areas: "auno"
+ "vuno"
+ "ados"
+ "vdos"
+ "atres"
+ "vtres"
+ "acuatro"
+ "vcuatro"
+ "acinco"; }
+  .sobremi .skills {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas: "contenido"
+ "facebook"
+ "google"
+ "html"
+ "css"
+ "js"; } }

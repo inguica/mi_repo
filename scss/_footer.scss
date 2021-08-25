@@ -1,0 +1,11 @@
+@import 'variables';
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorDamasco;
+    height: 10vh;
+}   
