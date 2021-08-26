@@ -134,7 +134,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 10vh 0 5vh;
+    padding: 100px 0 5vh;
     text-align: center; }
   .mainServicios .servicios2 {
     height: 70vh;
@@ -143,8 +143,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "servicio4 servicio5 servicio6"
- "servicio1 servicio2 servicio3";
+    grid-template-areas: "servicio4 servicio5 servicio6" "servicio1 servicio2 servicio3";
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     /*for*/ }
@@ -190,21 +189,14 @@ footer {
   align-items: center;
   justify-content: start;
   width: 100%;
-  padding: 10vh 0; }
+  padding: 100px 0; }
   .portafolio .grillaPortafolio {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 30px;
-    grid-template-areas: "auno vuno ados"
- "auno vuno ados"
- "vdos vuno vtres"
- "vdos atres vtres"
- "vdos atres vtres"
- "acuatro vcuatro acinco"
- "acuatro vcuatro acinco"
- ". vcuatro .";
+    grid-template-areas: "auno vuno ados" "auno vuno ados" "vdos vuno vtres" "vdos atres vtres" "vdos atres vtres" "acuatro vcuatro acinco" "acuatro vcuatro acinco" ". vcuatro .";
     /*map*/
     /*each*/ }
     .portafolio .grillaPortafolio div {
@@ -243,7 +235,7 @@ footer {
   align-items: center;
   justify-content: start;
   width: 100%;
-  padding-top: 10vh; }
+  padding-top: 100px; }
   .sobremi .tarjetaClientes {
     width: 70%;
     display: flex;
@@ -307,7 +299,7 @@ footer {
 .contacto {
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 10vh; }
+  padding-top: 100px; }
   .contacto p {
     width: 80%;
     padding-bottom: 30px;
@@ -318,7 +310,6 @@ footer {
     justify-content: center; }
 
 .contacto2 {
-  height: 40vh;
   justify-content: center;
   padding: 5vh 0;
   width: 100%; }
@@ -392,9 +383,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "servicio4 servicio5"
- "servicio6 servicio1"
- "servicio2 servicio3"; }
+    grid-template-areas: "servicio4 servicio5" "servicio6 servicio1" "servicio2 servicio3"; }
   .aboutMe {
     width: 70%;
     text-align: center; }
@@ -424,12 +413,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "servicio4"
- "servicio5"
- "servicio6"
- "servicio1"
- "servicio2"
- "servicio3"; }
+    grid-template-areas: "servicio4" "servicio5" "servicio6" "servicio1" "servicio2" "servicio3"; }
   .aboutMe {
     width: 70%;
     text-align: center; }
@@ -439,23 +423,10 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, auto);
     grid-row-gap: 30px;
-    grid-template-areas: "auno"
- "vuno"
- "ados"
- "vdos"
- "atres"
- "vtres"
- "acuatro"
- "vcuatro"
- "acinco"; }
+    grid-template-areas: "auno" "vuno" "ados" "vdos" "atres" "vtres" "acuatro" "vcuatro" "acinco"; }
   .sobremi .skills {
     width: 70%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 100px);
-    grid-template-areas: "contenido"
- "facebook"
- "google"
- "html"
- "css"
- "js"; } }
+    grid-template-areas: "contenido" "facebook" "google" "html" "css" "js"; } }
