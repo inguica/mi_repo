@@ -1,0 +1,821 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+hr {
+  width: 4%;
+  border: solid 2px #404040;
+  margin-bottom: 30px;
+}
+
+/*header*/
+header {
+  background-color: #FFEFD4;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header .menuPrincipal {
+  width: 100%;
+}
+
+header .menuPrincipal a {
+  color: #000;
+}
+
+header .menuPrincipal a p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+header .menuPrincipal a:hover {
+  text-decoration: none;
+  color: #404040;
+}
+
+header .menuPrincipal ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .menuPrincipal ul li a {
+  color: #404040;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+header .menuPrincipal ul li a:hover {
+  border-bottom: 2px solid #404040;
+  padding-bottom: 5px;
+}
+
+header div {
+  padding-right: 30px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header div i {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/*footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFEFD4;
+  height: 10vh;
+}
+
+/*------ INDEX ------*/
+.hero {
+  background-image: url("../img/hero.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hero div {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.hero div .tituloPrincipal {
+  color: white;
+  text-transform: initial;
+  font-size: 30px;
+}
+
+.hero div .tituloPrincipal span {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero div button {
+  width: 180px;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  background-color: #FFEFD4;
+  color: black;
+  font-size: 18px;
+  border: 1px solid #FFEFD4;
+}
+
+.hero div button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #FFEFD4;
+}
+
+.hero::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*------ SERVICIOS ------*/
+.mainServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainServicios .servicios {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 100px 0 5vh;
+  text-align: center;
+}
+
+.mainServicios .servicios2 {
+  padding-bottom: 10vh;
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "servicio4 servicio5 servicio6" "servicio1 servicio2 servicio3";
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  /*for*/
+}
+
+.mainServicios .servicios2 .servicio1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: servicio1;
+}
+
+.mainServicios .servicios2 .servicio2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: servicio2;
+}
+
+.mainServicios .servicios2 .servicio3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: servicio3;
+}
+
+.mainServicios .servicios2 .servicio4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: servicio4;
+}
+
+.mainServicios .servicios2 .servicio5 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: servicio5;
+}
+
+.mainServicios .servicios2 div {
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.mainServicios .servicios2 div i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.mainServicios .servicios2 div h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.mainServicios .servicios2 div p {
+  text-align: center;
+}
+
+.mainServicios .servicios2 div:hover {
+  color: #FFEFD4;
+  background-color: dimgray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.mainServicios .aboutMe {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*------ PORTAFOLIO------*/
+.portafolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.portafolio .grillaPortafolio {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 30px;
+      grid-template-areas: "auno vuno ados" "auno vuno ados" "vdos vuno vtres" "vdos atres vtres" "vdos atres vtres" "acuatro vcuatro acinco" "acuatro vcuatro acinco" ". vcuatro .";
+  /*map*/
+  /*each*/
+}
+
+.portafolio .grillaPortafolio div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.portafolio .grillaPortafolio div img {
+  width: 100%;
+}
+
+.portafolio .grillaPortafolio div img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.portafolio .grillaPortafolio .auno {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: auno;
+}
+
+.portafolio .grillaPortafolio .ados {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: ados;
+}
+
+.portafolio .grillaPortafolio .atres {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: atres;
+}
+
+.portafolio .grillaPortafolio .acuatro {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: acuatro;
+}
+
+.portafolio .grillaPortafolio .acinco {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: acinco;
+}
+
+.portafolio .grillaPortafolio .vuno {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: vuno;
+}
+
+.portafolio .grillaPortafolio .vdos {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: vdos;
+}
+
+.portafolio .grillaPortafolio .vtres {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: vtres;
+}
+
+.portafolio .grillaPortafolio .vcuatro {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: vcuatro;
+}
+
+/*------ SOBRE MI ------*/
+.sobremi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.sobremi .tarjetaClientes {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobremi .tarjetaClientes p {
+  padding: 20px;
+  text-align: center;
+}
+
+.sobremi .skills {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: (100px)[3];
+      grid-template-rows: repeat(3, 100px);
+      grid-template-areas: "contenido html" "facebook css" "google js";
+}
+
+.sobremi .skills .barra {
+  width: 90%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.sobremi .skills .barra .progress-bar {
+  background-color: #404040;
+  color: #FFEFD4;
+  position: relative;
+  left: -500px;
+  -webkit-transform: translateX(500px);
+          transform: translateX(500px);
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.sobremi .skills .contenido {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contenido;
+}
+
+.sobremi .skills .html {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: html;
+}
+
+.sobremi .skills .facebook {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: facebook;
+}
+
+.sobremi .skills .css {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: css;
+}
+
+.sobremi .skills .google {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: google;
+}
+
+.sobremi .skills .js {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: js;
+}
+
+.sobremi .carousel {
+  width: 100%;
+  width: 70%;
+  margin-bottom: 10vh;
+}
+
+.sobremi .carousel .carousel-inner .carousel-item {
+  height: 320px;
+}
+
+.sobremi .carousel .carousel-inner .carousel-item h5 {
+  color: #000;
+  font-weight: bolder;
+  margin: 10px 0 20px 0;
+}
+
+.sobremi .carousel .carousel-inner .carousel-item p {
+  color: #404040;
+}
+
+.sobremi img {
+  width: 150px;
+  border-radius: 150px;
+}
+
+/*------ CONTACTO ------*/
+.contacto,
+.contacto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacto {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 100px;
+}
+
+.contacto p {
+  width: 80%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.contacto div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5vh 0;
+  width: 100%;
+}
+
+.contacto2 .contenedorInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 30%;
+  margin-left: 20px;
+}
+
+.contacto2 .contenedorInfo .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.contacto2 .contenedorInfo .info i {
+  width: 40px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 20px;
+  background-color: #FFEFD4;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.contacto2 form {
+  width: 50%;
+}
+
+.contacto2 form .inputFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacto2 form .contenedorInput {
+  margin: 0;
+}
+
+.contacto2 form .contenedorInput input,
+.contacto2 form .contenedorInput #input,
+.contacto2 form .contenedorInput .input2 {
+  height: 30px;
+  padding: 5px;
+  border: solid 1px #404040;
+  margin-bottom: 20px;
+}
+
+.contacto2 form .contenedorInput input {
+  width: 45%;
+}
+
+.contacto2 form .contenedorInput #input {
+  width: 100%;
+}
+
+.contacto2 form .contenedorInput .input2 {
+  width: 100%;
+  height: 120px;
+}
+
+.contacto2 form .contenedorBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.contacto2 form .contenedorBoton button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #404040;
+  color: white;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.contacto2 form .contenedorBoton button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .sobremi .carousel .carousel-inner .carousel-item {
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero div {
+    width: 480px;
+  }
+  .mainServicios .servicios2 {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "servicio4 servicio5" "servicio6 servicio1" "servicio2 servicio3";
+  }
+  .aboutMe {
+    width: 70%;
+    text-align: center;
+  }
+  .sobremi .carousel {
+    height: 380px;
+  }
+  .sobremi .carousel-inner {
+    margin-top: 20px;
+  }
+  .sobremi .carousel-caption {
+    height: 100%;
+  }
+  .contacto2 {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacto2 .contenedorInfo {
+    width: 80%;
+  }
+  .contacto2 form {
+    width: 80%;
+  }
+  .contacto2 form .inputFlex {
+    display: block;
+  }
+  .contacto2 form .contenedorInput input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero div {
+    width: 350px;
+  }
+  .mainServicios .servicios2 {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "servicio4" "servicio5" "servicio6" "servicio1" "servicio2" "servicio3";
+  }
+  .aboutMe {
+    width: 70%;
+    text-align: center;
+  }
+  .portafolio {
+    height: 100%;
+  }
+  .portafolio .grillaPortafolio {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[9];
+        grid-template-rows: repeat(9, auto);
+    grid-row-gap: 30px;
+        grid-template-areas: "auno" "vuno" "ados" "vdos" "atres" "vtres" "acuatro" "vcuatro" "acinco";
+  }
+  .sobremi .skills {
+    width: 70%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (100px)[6];
+        grid-template-rows: repeat(6, 100px);
+        grid-template-areas: "contenido" "facebook" "google" "html" "css" "js";
+  }
+}
+/*# sourceMappingURL=style.css.map */
