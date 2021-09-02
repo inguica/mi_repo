@@ -461,7 +461,8 @@ footer {
     height: 100%; }
   .portafolio .grillaPortafolio {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto); }
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "auno" "ados" "atres"; }
   .sobremi .curriculum .info {
     padding: 20px 0;
     width: 100%; }
