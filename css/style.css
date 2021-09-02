@@ -136,6 +136,8 @@ footer {
     justify-content: start;
     padding: 10vh 0 5vh;
     text-align: center; }
+    .mainServicios .servicios p {
+      font-size: 20px; }
   .mainServicios .servicios2 {
     padding-bottom: 10vh;
     width: 70%;
@@ -233,7 +235,25 @@ footer {
     align-items: center; }
     .sobremi .tarjetaClientes p {
       padding: 20px;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 50px; }
+  .sobremi .curriculum {
+    display: flex;
+    width: 70%;
+    margin-bottom: 50px; }
+    .sobremi .curriculum .foto_perfil {
+      width: 30%; }
+      .sobremi .curriculum .foto_perfil img {
+        border-radius: 0;
+        width: 100%; }
+    .sobremi .curriculum .info {
+      width: 70%;
+      padding: 0 30px; }
+      .sobremi .curriculum .info div {
+        display: flex;
+        justify-content: space-between; }
+        .sobremi .curriculum .info div ul {
+          list-style: none; }
   .sobremi .skills {
     width: 70%;
     display: grid;
@@ -364,18 +384,33 @@ footer {
   .sobremi .carousel .carousel-inner .carousel-item {
     height: 380px; } }
 
-@media only screen and (max-width: 767px) {
-  .hero div {
-    width: 480px; }
+@media only screen and (max-width: 992px) {
   .mainServicios .servicios2 {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "servicio4 servicio5" "servicio6 servicio1" "servicio2 servicio3"; }
+  .sobremi .curriculum .foto_perfil {
+    width: 50%; }
+  .sobremi .curriculum .info {
+    width: 50%; }
+  .sobremi .curriculum .info div {
+    display: block; } }
+
+@media only screen and (max-width: 767px) {
+  .hero div {
+    width: 480px; }
   .aboutMe {
     width: 70%;
     text-align: center; }
+  .sobremi .curriculum {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .sobremi .curriculum .info {
+    padding: 20px 0;
+    width: 70%; }
   .sobremi .carousel {
     height: 380px; }
   .sobremi .carousel-inner {
@@ -394,15 +429,19 @@ footer {
   .contacto2 form .contenedorInput input {
     width: 100%; } }
 
-@media only screen and (max-width: 480px) {
-  .hero div {
-    width: 350px; }
+@media only screen and (max-width: 600px) {
   .mainServicios .servicios2 {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "servicio4" "servicio5" "servicio6" "servicio1" "servicio2" "servicio3"; }
+  .sobremi .curriculum .foto_perfil {
+    width: 70%; } }
+
+@media only screen and (max-width: 480px) {
+  .hero div {
+    width: 350px; }
   .aboutMe {
     width: 70%;
     text-align: center; }
@@ -413,6 +452,9 @@ footer {
     grid-template-rows: repeat(9, auto);
     grid-row-gap: 30px;
     grid-template-areas: "auno" "vuno" "ados" "vdos" "atres" "vtres" "acuatro" "vcuatro" "acinco"; }
+  .sobremi .curriculum .info {
+    padding: 20px 0;
+    width: 100%; }
   .sobremi .skills {
     width: 70%;
     display: grid;
