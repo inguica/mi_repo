@@ -193,21 +193,11 @@ footer {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 30px;
-    grid-template-areas: "auno vuno ados" "auno vuno ados" "vdos vuno vtres" "vdos atres vtres" "vdos atres vtres" "acuatro vcuatro acinco" "acuatro vcuatro acinco" ". vcuatro .";
+    grid-template-rows: 1fr;
     /*map*/
     /*each*/ }
-    .portafolio .grillaPortafolio div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden; }
-      .portafolio .grillaPortafolio div img {
-        width: 100%; }
-      .portafolio .grillaPortafolio div img:hover {
-        transform: scale(1.2);
-        transition: 1s; }
+    .portafolio .grillaPortafolio div img {
+      width: 100%; }
     .portafolio .grillaPortafolio .auno {
       grid-area: auno; }
     .portafolio .grillaPortafolio .ados {
