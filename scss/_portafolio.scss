@@ -5,11 +5,7 @@
 .portafolio {
     @include flex (flex, column, start, center);
     width: 100%;
-<<<<<<< HEAD
-    padding: 100px 0;
-=======
     padding: 100px 0 50px;
->>>>>>> rama
     .grillaPortafolio {
         width: 70%;
         display: grid;
