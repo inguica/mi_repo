@@ -1,42 +1,64 @@
 /*------ PORTAFOLIO------*/
 
+@import 'flex';
+
 .portafolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    @include flex (flex, column, start, center);
     width: 100%;
-    padding: 10vh 0;
+    padding: 100px 0 50px;
     .grillaPortafolio {
         width: 70%;
         display: grid;
         grid-template-columns:repeat(3, 1fr);
         grid-template-rows: 1fr;
-        div {
-            img {
-                width: 100%;
+        grid-template-areas: 
+        "auno ados atres"
+        ;
+        .portafolio__imagenes {
+            display: grid;
+            grid-template-areas:
+            "va" "vb" "vc";
+            /*each*/
+            div {
+                img {
+                    width: 100%;
+                }
             }
         }
+        .auno {
+            @each $portafolioUno in a, b, c {
+                .auno#{$portafolioUno} {
+                    grid-area: v#{$portafolioUno};
+                }
+            }
+        }
+        .ados {
+            @each $portafolioDos in a, b, c {
+                .ados#{$portafolioDos} {
+                    grid-area: v#{$portafolioDos};
+                }
+            }
+        }
+        .atres {
+            @each $portafolioTres in a, b, c {
+                .atres#{$portafolioTres} {
+                    grid-area: v#{$portafolioTres};
+                }
+            }
+        }
+            
 
         /*map*/
-        $portafolioA: (
+        $portafolio: (
             uno: uno,
             dos: dos,
             tres: tres,
-            cuatro: cuatro,
-            cinco: cinco
         );
-        @each $foto, $area in $portafolioA {
+        @each $foto, $area in $portafolio {
             .a#{$foto} {
                 grid-area: a#{$area};
             }
         }
         
-        /*each*/
-        @each $portafolioV in uno, dos, tres, cuatro {
-            .v#{$portafolioV} {
-                grid-area: v#{$portafolioV};
-            }
-        }
     }
 }

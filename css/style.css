@@ -18,8 +18,9 @@ header {
   background-color: #FFEFD4;
   padding: 10px 0;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -134,7 +135,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 10vh 0 5vh;
+    padding: 100px 0 50px;
     text-align: center; }
     .mainServicios .servicios p {
       font-size: 20px; }
@@ -177,47 +178,58 @@ footer {
       transition: 0.5s;
       cursor: pointer; }
   .mainServicios .aboutMe {
-    height: 20vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 50px; }
 
 /*------ PORTAFOLIO------*/
 .portafolio {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: start;
+  align-items: center;
   width: 100%;
-  padding: 10vh 0; }
+  padding: 100px 0 50px; }
   .portafolio .grillaPortafolio {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    /*map*/
-    /*each*/ }
-    .portafolio .grillaPortafolio div img {
-      width: 100%; }
+    grid-template-areas: "auno ados atres";
+    /*map*/ }
+    .portafolio .grillaPortafolio .portafolio__imagenes {
+      display: grid;
+      grid-template-areas: "va" "vb" "vc";
+      /*each*/ }
+      .portafolio .grillaPortafolio .portafolio__imagenes div img {
+        width: 100%; }
+    .portafolio .grillaPortafolio .auno .aunoa {
+      grid-area: va; }
+    .portafolio .grillaPortafolio .auno .aunob {
+      grid-area: vb; }
+    .portafolio .grillaPortafolio .auno .aunoc {
+      grid-area: vc; }
+    .portafolio .grillaPortafolio .ados .adosa {
+      grid-area: va; }
+    .portafolio .grillaPortafolio .ados .adosb {
+      grid-area: vb; }
+    .portafolio .grillaPortafolio .ados .adosc {
+      grid-area: vc; }
+    .portafolio .grillaPortafolio .atres .atresa {
+      grid-area: va; }
+    .portafolio .grillaPortafolio .atres .atresb {
+      grid-area: vb; }
+    .portafolio .grillaPortafolio .atres .atresc {
+      grid-area: vc; }
     .portafolio .grillaPortafolio .auno {
       grid-area: auno; }
     .portafolio .grillaPortafolio .ados {
       grid-area: ados; }
     .portafolio .grillaPortafolio .atres {
       grid-area: atres; }
-    .portafolio .grillaPortafolio .acuatro {
-      grid-area: acuatro; }
-    .portafolio .grillaPortafolio .acinco {
-      grid-area: acinco; }
-    .portafolio .grillaPortafolio .vuno {
-      grid-area: vuno; }
-    .portafolio .grillaPortafolio .vdos {
-      grid-area: vdos; }
-    .portafolio .grillaPortafolio .vtres {
-      grid-area: vtres; }
-    .portafolio .grillaPortafolio .vcuatro {
-      grid-area: vcuatro; }
 
 /*------ SOBRE MI ------*/
 .sobremi {
@@ -226,7 +238,7 @@ footer {
   align-items: center;
   justify-content: start;
   width: 100%;
-  padding-top: 10vh; }
+  padding-top: 100px; }
   .sobremi .tarjetaClientes {
     width: 70%;
     display: flex;
@@ -308,7 +320,7 @@ footer {
 .contacto {
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 10vh; }
+  padding-top: 100px; }
   .contacto p {
     width: 80%;
     padding-bottom: 30px;
@@ -449,9 +461,7 @@ footer {
     height: 100%; }
   .portafolio .grillaPortafolio {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, auto);
-    grid-row-gap: 30px;
-    grid-template-areas: "auno" "vuno" "ados" "vdos" "atres" "vtres" "acuatro" "vcuatro" "acinco"; }
+    grid-template-rows: repeat(3, auto); }
   .sobremi .curriculum .info {
     padding: 20px 0;
     width: 100%; }

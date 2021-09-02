@@ -109,18 +109,7 @@
     }
     .portafolio .grillaPortafolio {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(9, auto);
-        grid-row-gap: 30px;
-        grid-template-areas:
-            "auno"
-            "vuno"
-            "ados"
-            "vdos"
-            "atres"
-            "vtres"
-            "acuatro"
-            "vcuatro"
-            "acinco";
+        grid-template-rows: repeat(3, auto);
     }
 
     .sobremi .curriculum .info {
