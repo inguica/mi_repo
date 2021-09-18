@@ -54,6 +54,17 @@
         width: 70%;
         text-align: center;
     }
+    .sobremi .tarjetaClientes {
+        display: block
+    }
+    .sobremi .tarjetaClientes p {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .sobremi .tarjetaClientes .tarjetaClientes__p2 {
+        margin-bottom: 50px;
+    }
     .sobremi .curriculum {
         flex-direction: column;
         align-items: center;
@@ -107,6 +118,9 @@
         "servicio2"
         "servicio3";
     }
+    .mainServicios .aboutMe img {
+        width: 80%;
+    }
     .sobremi .curriculum .foto_perfil {
         width: 70%;
     }
@@ -128,7 +142,18 @@
         grid-template-rows: repeat(3, auto);
         grid-template-areas: "auno" "ados" "atres";
     }
-
+    .portafolio .grillaPortafolio .atres {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "va" 
+            "vb"
+            "vc"
+            "vd"
+            "ve"
+            "vf";
+    }
     .sobremi .curriculum .info {
         padding: 20px 0;
         width: 100%;

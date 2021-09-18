@@ -171,7 +171,7 @@ footer {
         margin-bottom: 10px;
         font-size: 20px; }
       .mainServicios .servicios2 div p {
-        text-align: center; }
+        text-align: justify; }
     .mainServicios .servicios2 div:hover {
       color: #FFEFD4;
       background-color: dimgray;
@@ -187,7 +187,7 @@ footer {
     padding-bottom: 50px; }
     .mainServicios .aboutMe p {
       font-size: 20px;
-      text-align: center; }
+      text-align: justify; }
     .mainServicios .aboutMe img {
       width: 60%;
       margin: 30px 0; }
@@ -312,13 +312,12 @@ footer {
   .sobremi .tarjetaClientes {
     width: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     .sobremi .tarjetaClientes p {
       padding: 20px;
-      text-align: center;
-      margin-bottom: 50px; }
+      text-align: justify;
+      margin-bottom: 50px;
+      width: 50%; }
   .sobremi .curriculum {
     display: flex;
     width: 70%;
@@ -397,7 +396,7 @@ footer {
   .contacto p {
     width: 80%;
     padding-bottom: 30px;
-    text-align: center; }
+    text-align: justify; }
   .contacto div {
     width: 100%;
     display: flex;
@@ -498,6 +497,14 @@ footer {
   .aboutMe {
     width: 70%;
     text-align: center; }
+  .sobremi .tarjetaClientes {
+    display: block; }
+  .sobremi .tarjetaClientes p {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0; }
+  .sobremi .tarjetaClientes .tarjetaClientes__p2 {
+    margin-bottom: 50px; }
   .sobremi .curriculum {
     flex-direction: column;
     align-items: center;
@@ -530,6 +537,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "servicio4" "servicio5" "servicio6" "servicio1" "servicio2" "servicio3"; }
+  .mainServicios .aboutMe img {
+    width: 80%; }
   .sobremi .curriculum .foto_perfil {
     width: 70%; } }
 
@@ -545,6 +554,11 @@ footer {
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "auno" "ados" "atres"; }
+  .portafolio .grillaPortafolio .atres {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "va"  "vb" "vc" "vd" "ve" "vf"; }
   .sobremi .curriculum .info {
     padding: 20px 0;
     width: 100%; }
