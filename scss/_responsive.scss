@@ -16,6 +16,22 @@
         "servicio2 servicio3";
     }
 
+    .portafolio .grillaPortafolio {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "auno ados" "atres atres";
+    }
+
+    .portafolio .grillaPortafolio .atres {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "va vb"
+            "vc vd"
+            "ve vf";
+    }
+
     .sobremi .curriculum .foto_perfil {
         width: 50%;
     }

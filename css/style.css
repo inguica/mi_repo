@@ -179,11 +179,18 @@ footer {
       cursor: pointer; }
   .mainServicios .aboutMe {
     height: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     padding-bottom: 50px; }
+    .mainServicios .aboutMe p {
+      font-size: 20px;
+      text-align: center; }
+    .mainServicios .aboutMe img {
+      width: 60%;
+      margin: 30px 0; }
 
 /*------ PORTAFOLIO------*/
 .portafolio {
@@ -192,7 +199,7 @@ footer {
   justify-content: start;
   align-items: center;
   width: 100%;
-  padding: 100px 0 50px; }
+  padding: 100px 0; }
   .portafolio .grillaPortafolio {
     width: 70%;
     display: grid;
@@ -202,34 +209,94 @@ footer {
     /*map*/ }
     .portafolio .grillaPortafolio .portafolio__imagenes {
       display: grid;
-      grid-template-areas: "va" "vb" "vc";
+      grid-template-areas: "va" "vb" "vc" "vd" "ve" "vf";
       /*each*/ }
+      .portafolio .grillaPortafolio .portafolio__imagenes .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        cursor: pointer;
+        opacity: 1; }
+        .portafolio .grillaPortafolio .portafolio__imagenes .overlay:hover {
+          display: block;
+          opacity: 0;
+          transition: .3s; }
+      .portafolio .grillaPortafolio .portafolio__imagenes div:hover {
+        cursor: pointer; }
       .portafolio .grillaPortafolio .portafolio__imagenes div img {
         width: 100%; }
     .portafolio .grillaPortafolio .auno .aunoa {
-      grid-area: va; }
+      grid-area: va;
+      position: relative; }
     .portafolio .grillaPortafolio .auno .aunob {
-      grid-area: vb; }
+      grid-area: vb;
+      position: relative; }
     .portafolio .grillaPortafolio .auno .aunoc {
-      grid-area: vc; }
+      grid-area: vc;
+      position: relative; }
+    .portafolio .grillaPortafolio .auno .aunod {
+      grid-area: vd;
+      position: relative; }
+    .portafolio .grillaPortafolio .auno .aunoe {
+      grid-area: ve;
+      position: relative; }
+    .portafolio .grillaPortafolio .auno .aunof {
+      grid-area: vf;
+      position: relative; }
     .portafolio .grillaPortafolio .ados .adosa {
-      grid-area: va; }
+      grid-area: va;
+      position: relative; }
     .portafolio .grillaPortafolio .ados .adosb {
-      grid-area: vb; }
+      grid-area: vb;
+      position: relative; }
     .portafolio .grillaPortafolio .ados .adosc {
-      grid-area: vc; }
+      grid-area: vc;
+      position: relative; }
+    .portafolio .grillaPortafolio .ados .adosd {
+      grid-area: vd;
+      position: relative; }
+    .portafolio .grillaPortafolio .ados .adose {
+      grid-area: ve;
+      position: relative; }
+    .portafolio .grillaPortafolio .ados .adosf {
+      grid-area: vf;
+      position: relative; }
     .portafolio .grillaPortafolio .atres .atresa {
-      grid-area: va; }
+      grid-area: va;
+      position: relative; }
     .portafolio .grillaPortafolio .atres .atresb {
-      grid-area: vb; }
+      grid-area: vb;
+      position: relative; }
     .portafolio .grillaPortafolio .atres .atresc {
-      grid-area: vc; }
+      grid-area: vc;
+      position: relative; }
+    .portafolio .grillaPortafolio .atres .atresd {
+      grid-area: vd;
+      position: relative; }
+    .portafolio .grillaPortafolio .atres .atrese {
+      grid-area: ve;
+      position: relative; }
+    .portafolio .grillaPortafolio .atres .atresf {
+      grid-area: vf;
+      position: relative; }
     .portafolio .grillaPortafolio .auno {
       grid-area: auno; }
     .portafolio .grillaPortafolio .ados {
       grid-area: ados; }
     .portafolio .grillaPortafolio .atres {
       grid-area: atres; }
+    .portafolio .grillaPortafolio .acuatro {
+      grid-area: acuatro; }
+    .portafolio .grillaPortafolio .acinco {
+      grid-area: acinvco; }
+    .portafolio .grillaPortafolio .aseis {
+      grid-area: aseis; }
 
 /*------ SOBRE MI ------*/
 .sobremi {
@@ -261,6 +328,9 @@ footer {
     .sobremi .curriculum .info {
       width: 70%;
       padding: 0 30px; }
+      .sobremi .curriculum .info #parrafoTitulo {
+        font-size: 23px;
+        margin-bottom: 30px; }
       .sobremi .curriculum .info div {
         display: flex;
         justify-content: space-between; }
@@ -403,6 +473,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "servicio4 servicio5" "servicio6 servicio1" "servicio2 servicio3"; }
+  .portafolio .grillaPortafolio {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "auno ados" "atres atres"; }
+  .portafolio .grillaPortafolio .atres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "va vb" "vc vd" "ve vf"; }
   .sobremi .curriculum .foto_perfil {
     width: 50%; }
   .sobremi .curriculum .info {

@@ -34,7 +34,11 @@
         }
         .info {
             width: 70%;
-            padding: 0 30px;
+            padding: 0 30px;  
+            #parrafoTitulo {
+                font-size: 23px;
+                margin-bottom: 30px;
+            }
             div {
                 display: flex;
                 justify-content: space-between;
